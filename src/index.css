@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Dancing+Script:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+/* Custom font classes */
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-cursive {
+  font-family: 'Dancing Script', cursive;
+}
+
+
+@keyframes slide-left-to-right {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  @keyframes slide-right-to-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-slide-left-to-right {
+    animation: slide-left-to-right 20s linear infinite;
+  }
+  
+  .animate-slide-right-to-left {
+    animation: slide-right-to-left 20s linear infinite;
+  }
